@@ -1,0 +1,66 @@
+Goal: Build a network of space stations -- One per planet.
+- Space Station
+ - Design ~95% done
+ - Space stations will be identical -- hexagonal style
+ - There would be one per planet -- 7
+ - Would be broken down into several similarly sized payloads
+ - Each payload will have the same mass, give or take a ton.
+ - Will be assembled in LKO
+- Lifter
+ - Design ~75% done
+  - in tuning phase
+ - Will be two stages
+ - Both will be reusable
+ - Both will land back at KSC
+  - 1st stage will be a suborbital return
+  - 2nd state will be an orbital return.
+ - Both will be automated via kPRC scripts -- Python
+  - Just to deliver to a consistent staging orbit, doubt I will automate rendezvous/docking
+- Interplanetary "Tug/s"
+ - Design 0% done
+ - Likely slow/efficient vessels
+ - Current SS design does not have a central docking point so may use two smaller tugs per SS
+ - Want them to be useable beyond the SS deliveries.
+
+- Mods
+ - kRPC
+ - FMRS
+  - for multi stage control
+ - KRASH
+  - for quicker tuning and development of vessels and kRPC scripts
+ - KIS/KAS
+  - for clean assembly of SSs without relying on unstable docking port connections
+ - KRE
+  - landing legs for Lifter with wider stance than stock
+  - had to do change some config settings to get to not be SO bouncy -- PITA
+
+Right now the Lifter is what I am focused on. I have a general design for it sorted out, pending some changes related to tuning of the kPRC scripts. I have a working script for the 2nd stage reentry and landing at KSC, though there is no room for variance in mass which will be an issue. Even though the payloads are the same mass, and will be delivered by an automated script to keep tolerances tight, there will no doubt be a variance in mass of the 2nd stage on return based on variables related to rendezvous and docking. I need to write a script who's reentry burns can account for that variance in mass. I'm curious if anyone 
+
+Launch
+
+- Constants -
+dry mass of first stage
+SI of engines
+Thrust (ATM)
+landing position
+
+- Track -
+fuel of first stage
+distance from landing position
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
